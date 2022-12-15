@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script>
+		function hello() {
+			alert("Successfully login");
+		}
+	</script>
+	<style>
+		body
+		{
+			background-color: #344a72;
+			font-family: 'Roboto',sans-serif;
+		}
+		.login
+		{
+			width: 360px;
+			height: 280px;
+			background-color: white;
+			margin: auto;
+			border-radius: 5px;
+			margin-top: 200px;
+		}
+		form
+		{
+			width: 300px;
+			padding-left: 20px;
+		}
+		form label 
+		{
+			display: flex;
+			padding-top: 15px;
+			font-size: 18px;
+		}
+		input
+		{
+			width: 100%;
+			padding: 7px;
+			border: none;
+			border: 1px solid grey;
+			outline: none;
+			border-radius: 5px;
+		}
+		input[type="button"]
+		{
+			width: 315px;
+			height: 35px;
+			margin-top: 20px;
+			border: none;
+			background-color: #49c1a2;
+			color: white;
+			font-size: 18px;
+		}
+		p
+		{
+			text-align: center;
+		}
+		a 
+		{
+			color: #49c1a2;
+		}
+		h1
+		{
+			text-align: center;
+			padding-top: 10px;
+		}
+		input[type="email"]:invalid
+			{
+				border: 3px solid red;
+			}
+		input[type="email"]:valid
+			{
+				border: 3px solid green;
+			}
+		@media (max-width:786px)
+		{
+			.login
+			{
+				width: 100%;
+			}
+		}
+		@media (max-width:480px)
+		{
+			.login
+			{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<form>
+			<h1>Login</h1>
+			<label>Email</label>
+			<input type="email" placeholder="Enter your email" required>
+
+			<label>Password</label>
+			<input type="password" placeholder="Enter your password" required>
+
+			<input type="button" value="Login" onclick="hello()">
+		</form>
+	</div>
+	<p>Not have an account? <a href="sign-up.html" >Sign up here</a></p>
+</body>
+</html>
